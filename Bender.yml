@@ -10,6 +10,8 @@ dependencies:
   zeroriscy:   { git: "https://github.com/yvantor/ibex.git"             , rev: "bender", target: "standalone_test"        }
 
 sources:
+  - defines:
+      ENABLE_VIP: ~
   - include_dirs:
       - rtl
     files:

@@ -51,6 +51,15 @@ module fir_top_wrap
   output logic                                  periph_r_valid,
   output logic       [ID-1:0]                   periph_r_id
 );
+  `ifdef ENABLE_VIP
+    initial begin
+      #10us $info("Successfully integrated fir-hwpe module.");
+    end
+  `else
+    initial begin
+      #10us $fatal("fir-hwpe module is not enabled. Add the define flag to the package description (Bender.yml)");
+    end
+  `endif
 
   localparam hci_size_parameter_t `HCI_SIZE_PARAM(tcdm) = '{
     DW:  32,
