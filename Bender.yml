@@ -28,6 +28,7 @@ sources:
       - rtl/fir_ctrl.sv
       # Level 3
       - rtl/fir_top.sv
+      - rtl/fir_submodule.sv
       # Level 4
       - rtl/fir_top_wrap.sv
       - target: test
