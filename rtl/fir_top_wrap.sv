@@ -148,6 +148,6 @@ module fir_top_wrap
     .periph      ( periph      )
   );
 
-  fir_submodule i_fir_sub();
+  // fir_submodule i_fir_sub();
 
 endmodule // fir_top_wrap

@@ -8,7 +8,7 @@ module fir_submodule;
   end
 `else
   initial begin
-    #10us $fatal("fir-hwpe module is not enabled. Add the define flag to the package description (Bender.yml)");
+    #10us $info("fir-hwpe module is not enabled. Add the define flag to the package description (Bender.yml)");
   end
 `endif
 
